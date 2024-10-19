@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <style>
+        body {
+            background-color: #f1c40f; /* Soft yellow */
+            color: #e74c3c; /* Red */
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: left;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2rem;
+            color: #e67e22; /* Orange */
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-size: 1.1rem;
+            color: #34495e; /* Dark blue */
+        }
+
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0 20px 0;
+            border: 1px solid #bdc3c7; /* Light gray */
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            background-color: #3498db; /* Blue */
+            color: white;
+            padding: 10px;
+            font-size: 1.2rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #2980b9; /* Darker blue */
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <form method="POST" action="login">
+        <h1>Login Form</h1>
+
+        <div class="form-group">
+            <label for="Uname">Username:</label>
+            <input type="text" id="Uname" name="Uname" placeholder="Enter your username">
+        </div>
+
+        <div class="form-group">
+            <label for="pword">Password:</label>
+            <input type="password" id="pword" name="pword" placeholder="Enter your password">
+        </div>
+
+        <input type="submit" value="Login"><br>
+    </form>
+</body>
+</html>
